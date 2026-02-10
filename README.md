@@ -2,25 +2,25 @@
 Part 1 – KPI Definitions
 This section outlines the core KPIs used to evaluate the performance and health of the POS Lite acquisition funnels.
 
-  1. Lead Acquisition Cost
+  i. Lead Acquisition Cost
   Lead Acquisition Cost measures the total marketing spend required to acquire a lead or customer, segmented by acquisition path (Self-Service vs Sales-Assisted).
   This KPI provides a clear view of acquisition efficiency and enables comparison across channels, countries, and funnel types. It serves as a baseline metric for assessing how effectively marketing investment is converted into demand and closed business.
 
-  2. Sales-Assisted Funnel Efficiency
+  ii. Sales-Assisted Funnel Efficiency
  Sales-Assisted Funnel Efficiency measures the share of marketing-generated leads that ultimately convert into signed POS Lite deals within the sales-assisted funnel. This KPI provides a clear, end-to-end view of how effectively Sales transforms inbound demand into closed 
  business, independent of funnel volume. It complements stage-level conversion metrics by summarising overall sales execution quality and enabling performance comparisons across channels, countries, and time periods.
 
-  3. Funnel Conversion Rates
+  iii. Funnel Conversion Rates
   Funnel Conversion Rates measure the percentage of users or leads who progress from one funnel stage to the next.
   Tracking conversion rates across both the Self-Service and Sales-Assisted funnels helps identify where friction occurs in the customer journey and isolates performance issues at specific funnel stages, whether driven by marketing effectiveness, product experience, or 
   sales execution.
 
-  4. Lead Quality per Channel
+  iv. Lead Quality per Channel
   Lead Quality per Channel evaluates not only the volume of leads generated but also their likelihood to convert into qualified opportunities and POS Lite deals.
   While some channels may generate high lead volumes, not all leads require the same sales effort or exhibit the same conversion potential. This KPI assesses channel performance using both volume and downstream conversion metrics, enabling a four-quadrant analysis to 
   distinguish scalable, high-quality channels from those generating low-intent demand.
 
-  5. POS Lite Acquisition Volume
+  v. POS Lite Acquisition Volume
   POS Lite Acquisition Volume measures the total number of POS Lite deals acquired across both self-service and sales-assisted funnels.
   This KPI ensures that efficiency optimisations are evaluated alongside absolute growth, providing visibility into overall business impact and market penetration.
 
