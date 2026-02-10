@@ -21,3 +21,6 @@ While some channels may generate high lead volumes, not all leads require the sa
 5. POS Lite Acquisition Volume
 POS Lite Acquisition Volume measures the total number of POS Lite deals acquired across both self-service and sales-assisted funnels.
 This KPI ensures that efficiency optimisations are evaluated alongside absolute growth, providing visibility into overall business impact and market penetration.
+
+
+2. Interpreting Cost per Lead vs. Sales Cycle Duration
