@@ -41,4 +41,13 @@ Session → Order Conversion Rate (%) = Total Orders ÷ Total Sessions
 2. Interpreting Cost per Lead vs. Sales Cycle Duration
 A decreasing Cost per Lead is generally positive, as it indicates improved marketing efficiency, while an increasing Sales Cycle Duration is typically negative because it implies higher sales effort and resource usage per deal. When these trends occur together, it often signals a trade-off in lead quality: cheaper leads tend to be lower-intent or less qualified, requiring more time and effort from Sales to convert. Unless this shift is a deliberate strategy to pursue higher-value deals with naturally longer sales cycles, the data would suggest increased cost of customer acquisition and reduced overall funnel efficiency despite lower upfront marketing costs.
 
+DBT Project Structure
+1. Staging Layer: Each raw source table (WEB_ORDERS, LEADS_FUNNEL, CHANNELS) would have a corresponding staging model.In this layer, I would: Standardise column names and formats, Typecast fields to appropriate data types, Handle NULLs and invalid values. No joins or business aggregations occur in this layer.
+
+2. Intermediate Layer: This layer contains reusable business logic and transformations. Here I would: Join related entities (e.g., campaigns to channels), Apply business rules ,Derive funnel metrics and reusable calculations, Prepare clean, analysis-ready datasets
+
+3. Mart Layer (fact and dim)This layer contains business-facing models designed to power dashboards and reporting. I would create:
+Fact tables (e.g., sales-assisted performance, self-service performance, mission overview)
+Dimension tables (e.g., channel, campaign, country, date). These models would contain aggregated metrics at the required reporting grain (e.g., monthly by channel).
+
  
