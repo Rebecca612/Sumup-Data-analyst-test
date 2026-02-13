@@ -1,7 +1,21 @@
-CREATE OR REPLACE VIEW dm_SALES_ASSISTED AS
+create or replace view DATEV_TEST.DATEV_TEST.DM_SALES_ASSISTED(
+	DATE,
+	COUNTRY_CODE,
+	CAMPAIGN_BUDGET_CATEGORY,
+	CHANNEL_3,
+	MARKETING_SPEND,
+	TOTAL_LEADS,
+	TOTAL_SQLS,
+	TOTAL_MEETING_DONE,
+	TOTAL_SIGNED_LEADS,
+	TOTAL_POS_LITE_DEALS,
+	COST_PER_LEAD,
+	FUNNEL_EFFICIENCY,
+	SQL_TO_MEETING_RATE
+) as
 
 SELECT
-    DATE,
+    date_trunc('month',DATE) as S_DATE,
     COUNTRY_CODE,
     c.campaign_budget_category,
     c.channel_3,
@@ -25,6 +39,7 @@ SELECT
         THEN round(SUM(TOTAL_MEETING_DONE) / SUM(TOTAL_SQLS),3)
     END AS SQL_TO_MEETING_RATE
 FROM LEADS_FUNNEL_BRONZE l
-join stg_channels c
+left join stg_channels c
 on l.campaign_id=c.campaign_id
 GROUP BY 1,2,3,4;
+;
