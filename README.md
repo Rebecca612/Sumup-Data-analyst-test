@@ -61,8 +61,13 @@ Marketing Recommendations
 Diversify channel allocation to reduce concentration risk. A significant portion of marketing spend and lead volume is concentrated on Facebook. While performance may currently be strong, heavy dependency on a single channel introduces structural risk. Platform policy changes, algorithm shifts, or rising acquisition costs could materially impact lead generation. Gradually reallocating part of the budget toward alternative high-performing channels would reduce exposure and improve long-term acquisition resilience.
 
 AI Tool and Policy
-I used AI to support documentation writing and to help structure high-level explanations of the dbt project architecture, anomaly detection approach, and code refinement. 
+I used AI to support documentation writing, explanation and to help structure high-level explanations of the dbt project architecture, anomaly detection approach, and code refinement. 
 Struggle with AI
 I used AI while working with SOQL (Salesforce Object Query Language). Initially, it struggled to generate the correct query structure required to implement a dashboard aggregation toggle. To resolve this, I gave the AI prompts with official Salesforce documentation links and example queries. I began drafting the query manually and asked the AI to complete or refine specific sections.
 It required several iterations and cross-referencing external examples. Still, through guided prompting and validation against documentation, I was able to identify the missing logic and finalise the correct query structure.
  
+Dashboard 
+<img width="1875" height="1500" alt="image" src="https://github.com/user-attachments/assets/7295af5f-1044-417b-b537-837f3f23c9da" />
+
+Overall Performance
+A total of 33,959 POS Lite deals were generated during the  period, with a Blended Cost per Deal of €49.33 and total marketing investment of approximately €1.67M. Approximately 61.36% of total deals originate from the Sales-Assisted funnel. The Lead → Deal conversion rate is 50.07%, indicating that roughly half of the generated leads convert into closed deals. The self-service funnel (Sessions → Signups → Orders) shows lower conversion compared to the sales-assisted path, which is expected in product-led acquisition. Marketing spend is heavily concentrated in a single channel (Facebook), which also drives a significant portion of leads.
