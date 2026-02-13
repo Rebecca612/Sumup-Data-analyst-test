@@ -55,6 +55,7 @@ Data Quality
 1. Campaign ID Data Type: CAMPAIGN_ID required explicit type casting to numeric.
 2. Null and Missing Values
 3. Outliers in Top-of-Funnel Metrics: Using IQR-based outlier detection:TOTAL_IMPRESSIONS: 404 outliers, TOTAL_CLICKS: 342 outliers, TOTAL_SPEND: 351 outliers. Outliers were concentrated in high-volume campaigns.Lower funnel metrics (Leads, SQLs, Deals) showed minimal to no outliers.
+<img width="1875" height="1500" alt="image" src="https://github.com/user-attachments/assets/02f8375e-d77c-4130-9e55-62e232e2bdc1" />
 
 4. 
 5. 
