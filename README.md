@@ -28,3 +28,4 @@ This section outlines the core KPIs used to evaluate the performance and health 
 2. Interpreting Cost per Lead vs. Sales Cycle Duration
 A decreasing Cost per Lead is generally positive, as it indicates improved marketing efficiency, while an increasing Sales Cycle Duration is typically negative because it implies higher sales effort and resource usage per deal. When these trends occur together, it often signals a trade-off in lead quality: cheaper leads tend to be lower-intent or less qualified, requiring more time and effort from Sales to convert. Unless this shift is a deliberate strategy to pursue higher-value deals with naturally longer sales cycles, the data would suggest increased cost of customer acquisition and reduced overall funnel efficiency despite lower upfront marketing costs.
 
+3. In building the data marts,i built on fact table for self service channel and sales assisted service channel. 
