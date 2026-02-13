@@ -1,0 +1,18 @@
+WITH summary AS (
+    SELECT
+        SUM(CASE WHEN DATE IS NULL THEN TOTAL_SPEND_EUR ELSE 0 END) AS spend_missing_date,
+        SUM(CASE WHEN DATE IS NULL THEN NB_OF_ORDERS ELSE 0 END) AS orders_missing_date,
+        SUM(TOTAL_SPEND_EUR) AS total_spend,
+        SUM(NB_OF_ORDERS) AS total_orders
+    FROM WEB_ORDERS
+)
+
+SELECT
+    spend_missing_date,
+    total_spend,
+    ROUND(spend_missing_date / NULLIF(total_spend,0) * 100,2) AS pct_spend_missing,
+
+    orders_missing_date,
+    total_orders,
+    ROUND(orders_missing_date / NULLIF(total_orders,0) * 100,2) AS pct_orders_missing
+FROM summary;
