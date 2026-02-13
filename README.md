@@ -54,9 +54,15 @@ Dimension tables (e.g., channel, campaign, country, date). These models would co
 Data Quality 
 1. Campaign ID Data Type: CAMPAIGN_ID required explicit type casting to numeric.
 2. Null and Missing Values
-3. Outliers in Top-of-Funnel Metrics: Using IQR-based outlier detection:TOTAL_IMPRESSIONS: 404 outliers, TOTAL_CLICKS: 342 outliers, TOTAL_SPEND: 351 outliers. Outliers were concentrated in high-volume campaigns.Lower funnel metrics (Leads, SQLs, Deals) showed minimal to no outliers.
-<img width="1875" height="1500" alt="image" src="https://github.com/user-attachments/assets/02f8375e-d77c-4130-9e55-62e232e2bdc1" />
+3. Outliers in Top-of-Funnel Metrics: Using IQR-based outlier detection:TOTAL_IMPRESSIONS: 404 outliers, TOTAL_CLICKS: 342 outliers, TOTAL_SPEND: 351 outliers. Outliers were concentrated in high-volume campaigns. Lower funnel metrics (Leads, SQLs, Deals) showed minimal to no outliers.
+<img width="1392" height="662" alt="image" src="https://github.com/user-attachments/assets/d3e123b6-83ea-48d0-83ee-b55d59f083c8" />
 
-4. 
-5. 
+Marketing Recommendations 
+Diversify channel allocation to reduce concentration risk. A significant portion of marketing spend and lead volume is concentrated on Facebook. While performance may currently be strong, heavy dependency on a single channel introduces structural risk. Platform policy changes, algorithm shifts, or rising acquisition costs could materially impact lead generation. Gradually reallocating part of the budget toward alternative high-performing channels would reduce exposure and improve long-term acquisition resilience.
+
+AI Tool and Policy
+I used AI to support documentation writing and to help structure high-level explanations of the dbt project architecture, anomaly detection approach, and code refinement. 
+Struggle with AI
+I used AI while working with SOQL (Salesforce Object Query Language). Initially, it struggled to generate the correct query structure required to implement a dashboard aggregation toggle. To resolve this, I gave the AI prompts with official Salesforce documentation links and example queries. I began drafting the query manually and asked the AI to complete or refine specific sections.
+It required several iterations and cross-referencing external examples. Still, through guided prompting and validation against documentation, I was able to identify the missing logic and finalise the correct query structure.
  
