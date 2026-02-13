@@ -1,0 +1,10 @@
+CREATE OR REPLACE VIEW stg_channels AS
+SELECT
+    CAST(CAMPAIGN_ID AS BIGINT) AS campaign_id,
+    TRIM(CAMPAIGN_NAME)  AS campaign_name,
+    TRIM(LOWER(CAMPAIGN_PERIOD_BUDGET_CATEGORY)) AS campaign_budget_category,
+    TRIM(LOWER(CHANNEL_3)) AS channel_3,
+    TRIM(LOWER(CHANNEL_4)) AS channel_4,
+    TRIM(LOWER(CHANNEL_5)) AS channel_5
+FROM channels
+GROUP BY 1,2,3,4,5,6
