@@ -45,5 +45,6 @@ SELECT
 FROM WEB_ORDERS_BRONZE w
 left join stg_channels c
 on w.campaign_id= c.campaign_id
+where date is not null
 GROUP BY 1,2,3,4;
 ;
